@@ -19,7 +19,7 @@ SPI ram_spi(MOSI, MISO, SCK);
 #define SPIRAM_SPI_Read_Byte(value) ram_spi.write(value)
 
 //SPIRAM
-DigitalOut SPIRAM_CS(MICROBIT_PIN_P2);
+DigitalOut SPIRAM_CS(MICROBIT_PIN_P10);
 #define SPIRAM_CS_0 SPIRAM_CS = 0
 #define SPIRAM_CS_1 SPIRAM_CS = 1
 

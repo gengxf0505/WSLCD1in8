@@ -21,10 +21,10 @@ SPI lcd_spi(MOSI, MISO, SCK);
 #define LCD_SPI_Write_Byte(value) lcd_spi.write(value)
 
 //LCD
-DigitalOut LCD_RST(MICROBIT_PIN_P8);
-DigitalOut LCD_DC(MICROBIT_PIN_P12);
-DigitalOut LCD_CS(MICROBIT_PIN_P16);
-PwmOut LCD_BL(MICROBIT_PIN_P1);
+DigitalOut LCD_RST(MICROBIT_PIN_P0);
+DigitalOut LCD_DC(MICROBIT_PIN_P2);
+DigitalOut LCD_CS(MICROBIT_PIN_P8);
+PwmOut LCD_BL(MICROBIT_PIN_P0);
 
 #define LCD_RST_0 LCD_RST = 0
 #define LCD_RST_1 LCD_RST = 1
